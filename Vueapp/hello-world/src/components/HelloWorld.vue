@@ -27,6 +27,11 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
+    <h3>Test Links</h3>
+    <ul>
+      <li><router-link to="the-data">The data</router-link></li>
+      <li><router-link to="scale">scale</router-link></li>
+    </ul>
   </div>
 </template>
 
