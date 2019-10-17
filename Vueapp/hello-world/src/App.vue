@@ -1,9 +1,15 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <router-link to="/">Home</router-link>
-    <router-link to="the-data">The data</router-link>
-    <router-link to="scale">Interactive scale</router-link>
+    <div class="header">
+        <img alt="Vue logo" src="./assets/logo2.png">
+        <nav class="main-nav">
+            <ul>
+                <li><router-link to="/">Home</router-link></li>
+                <li><router-link to="the-data">The data</router-link></li>
+                <li><router-link to="scale">Interactive scale</router-link></li>
+            </ul>
+        </nav>
+    </div>
     <router-view/>
   </div>
 </template>
@@ -22,6 +28,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

@@ -1,0 +1,37 @@
+$main-color: #ADA8B6;
+$sub-color: #FFEEDB;
+$third-color: #4C3B4D;
+$fourth-color: #A53860;
+$fith-color: #61C9A8;
+
+* {
+    font-family: gotham;
+    box-sizing: border-box;
+}
+
+body {
+    background: $sub-color;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.header {
+    background: $main-color;
+    .main-nav {
+        background: $fith-color;
+
+        ul {
+            list-style-type: none;
+            li{
+                display: inline-block;
+                width: 200px;
+                padding: 10px;
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
