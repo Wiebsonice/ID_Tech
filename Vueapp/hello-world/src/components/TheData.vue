@@ -11,7 +11,7 @@
             <a v-bind:href="''+item.cho.value+''">{{ item.cho.value }}</a>
             <h2> {{ item.title.value }} </h2>
             <img :src="''+item.img.value+''" alt="">
-            <p> Height: {{ item.extent.value }}</p>
+            <p> Height: {{ item.extent.value }} cm</p>
           </li>
         </ul>
       </p>
@@ -30,8 +30,6 @@
             }
         },
         mounted: function() {
-            // console.log("mounted")
-            // console.log(this.apiData)
             var url = "https://api.data.netwerkdigitaalerfgoed.nl/datasets/ivo/NMVW/services/NMVW-11/sparql";
             //Note that the query is wrapped in es6 template strings to allow for easy copy pasting
             var query = `
@@ -73,11 +71,11 @@
                         if (splittedString[1].includes("x") || splittedString[1].includes("X")){
                             i.extent.value = splittedString[1].split("x")[0]
                         } else {
-                            i.extent.value = splittedString[1] + " cm"
+                            i.extent.value = splittedString[1]
                         }
                     } else if (i.extent.value.includes("×")) {
                         var splittedString = i.extent.value.split(" ");
-                        i.extent.value = splittedString[0] + " cm"
+                        i.extent.value = splittedString[0]
                     }
                 })
 
@@ -89,7 +87,7 @@
     }
 </script>
 
-<style>
+<style lang="scss"  scoped>
 
 .data-block li{
     list-style-type:none;
@@ -98,10 +96,9 @@
     margin: 1%;
     background: #ADA8B6;
     padding: 5px;
-}
-
-.data-block li img {
-    width: 50%;
+    img {
+        width: 50%;
+    }
 }
 
 </style>
