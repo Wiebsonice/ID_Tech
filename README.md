@@ -1,3 +1,4 @@
 # ID_Tech
 
-halloo
+# Wiki
+[Wiki link](https://github.com/Wiebsonice/frontend-applications/wiki)
