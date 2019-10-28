@@ -2,8 +2,8 @@
 
 Dit project is een concept uitwerking van een webapplicatie gemaakt in VueJs in opdracht voor het Tropenmuseum van uit het HvA.
 
-* [Het Concept](#)
-* [Getting started](#)
+* [Het Concept](https://github.com/Wiebsonice/frontend-applications/blob/master/README.md#het-concept)
+* [Getting started](https://github.com/Wiebsonice/frontend-applications/blob/master/README.md#getting-started)
 * [Wiki](https://github.com/Wiebsonice/frontend-applications/wiki)
 
 # Het concept
@@ -16,7 +16,7 @@ Volg deze instructies om het project op je locale machine draaiend te krijgen, v
 Bekijk het kopje **deployment** om te lezen hoe je het project kunt deployen op een live systeem.
 
 
-### Installing
+### Instaleren
 
 Volg deze stappen om het project draaiend te krijgen
 
@@ -63,7 +63,7 @@ En ten slotte zul je gegroet worden door de homepagina van het project
 ## Deployment
 Soon meer uitleg
 
-## Built With
+## Gebouwd met
 
 * [VueJs](https://vuejs.org/) - The js framework used
 * [Node](https://nodejs.org/en/) - Dependency Management
