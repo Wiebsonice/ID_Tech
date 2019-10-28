@@ -1,3 +1,4 @@
+![header img](https://github.com/Wiebsonice/frontend-applications/blob/master/wiki-assets/readme-header.gif)
 # Buddha experience
 
 Dit project is een concept uitwerking van een webapplicatie gemaakt in VueJs in opdracht voor het Tropenmuseum van uit het HvA.
