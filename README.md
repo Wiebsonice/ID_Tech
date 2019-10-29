@@ -76,6 +76,14 @@ Soon meer uitleg
 * [NMVW API](https://collectie.wereldculturen.nl/) - API voor data
 * [SparQl](https://www.w3.org/TR/rdf-sparql-query/) - SpaQl taal van de database
   
+## Features
+
+* [Routing](https://github.com/Wiebsonice/frontend-applications/wiki/Documentatie-%7C-Routing)
+* [Data uit API](https://github.com/Wiebsonice/frontend-applications/wiki/Documentatie-%7C-Data-ophalen-en-gebruiken)
+* [Data manipulatie](https://github.com/Wiebsonice/frontend-applications/wiki/Documentatie-%7C-Data-bewerken-clientside)
+* [SparQl Query](https://github.com/Wiebsonice/frontend-applications/wiki/Documentatie-%7C-SparQl-Query)
+
+  
 ## API Data
 
 De Data die ik gebruik in de app komt van het endpoint van de NMVW collectie. Hoe ik deze data binnenhaal is te lezen op de pagina [](), dit is met SparQl gedaan. De data die ik terug krijg als object ziet er alsvolgd uit:
@@ -118,6 +126,11 @@ Een aantal waarden die ik binnen krijg heb ik clientside opgelost. Zo heb ik de 
 ## Author
 
 * **Wiebe Kremer** - *Initial work* - [Wiebsonice](https://github.com/Wiebsonice)
+  
+## Acknowledgements
+
+* Scss implementatie met hulp van [Coenmathijssen](https://github.com/Coenmathijssen/) 
+* Clientside datamanipulatie `http` to `https` fix met hulp van [Razpudding](https://github.com/razpudding)
 
 ## License
 
