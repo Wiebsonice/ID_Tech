@@ -109,6 +109,11 @@ De Data die ik gebruik in de app komt van het endpoint van de NMVW collectie. Ho
 
 
 ```
+
+De data die je hierboven ziet is binnengehaald door mij en is informatie over boeddha beelden. De `Cho` is het object nummer, de `Extent` geeft de afmeetingen, de `img` bevat de link naar de image, de `title` spreekt voor zichzelf, en ten slotte `type` geeft het type voorbeeld weer.
+
+### DataBewerking
+Een aantal waarden die ik binnen krijg heb ik clientside opgelost. Zo heb ik de verschillende formateringen van de lengtes van de beelden gelijk getrokken, Heb ik van de image links de `http://` links omgezet naar `https://`. En ten slotte heb ik de objecten gesorteert op de lengte. Dit valt allemaal te lezen op [Data bewerken clientside](https://github.com/Wiebsonice/frontend-applications/wiki/Documentatie-%7C-Data-bewerken-clientside)
   
 ## Author
 
