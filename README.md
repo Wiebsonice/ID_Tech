@@ -121,6 +121,6 @@ Een aantal waarden die ik binnen krijg heb ik clientside opgelost. Zo heb ik de 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 
