@@ -2,17 +2,23 @@
     <div class="hello">
       <h1>Jij en de boeddha's!</h1>
       <p>
-        Hoelang zijn de boedha's?
+        Hoelang ben jij?
+        Ik ben <input type="number" min="73" max="200" name="lenght" value="73" v-model="lenght" v-on:change="changed"> cm
       </p>
       <p>
-          <div class="outer-scale">
+          <div class="outer-scale"  ref="scale">
               <ul class="data-block">
-              <li v-for="item in apiDataSorted" v-bind:style="{ 'height': 'calc(' + item.extent.value + '/ 73 * 636px)' }" v-on:click="selected = item.cho.value" v-bind:class="{active:item.cho.value == selected}">
+              <li v-for="item in apiDataSorted" v-bind:style="{ 'height': 'calc(' + item.extent.value + '/ ' + lenght + ' * 636px)' }" v-on:click="selected = item.cho.value" v-bind:class="{active:item.cho.value == selected}">
                 <!-- <a v-bind:href="''+item.cho.value+''">{{ item.cho.value }}</a> -->
                 <!-- <h2> {{ item.title.value }} </h2> -->
                 <img :src="''+item.img.value+''" alt="">
-                <p class="height">{{ item.extent.value }} cm</p>
+                <p class="height">{{ item.title.value }} </br>
+                    Lengte: {{ item.extent.value }}  cm
+                </p>
               </li>
+              <li>
+                <img src="../assets/person.png" alt="">
+            </li>
             </ul>
           </div>
       </p>
@@ -25,7 +31,8 @@
             return {
                 apiData: [],
                 apiDataSorted: [],
-                selected: undefined
+                selected: undefined,
+                lenght: 73
             }
         },
         mounted: function() {
@@ -97,9 +104,8 @@
             }
         },
         methods: {
-            greet: function () {
-              // `this` inside methods points to the Vue instance
-                  // event.target.parentElement.classList.toggle('active')
+            changed: function () {
+              this.$refs.scale.classList.add("show-scale")
             }
         }
     }
@@ -115,10 +121,18 @@
     background: url(../assets/scale.png);
     background-size: auto 2000px;
     background-position: bottom;
+    opacity:0;
+    transition: ease opacity .5s;
+
+    &.show-scale {
+        opacity:1;
+    }
 }
 
 .data-block {
-    width:3000px;
+    width:auto;
+    padding-right: 200px;
+    height: 640px;
     text-align: left;
     margin-top:0;
     margin-bottom: 0 !important;
@@ -133,6 +147,10 @@
         margin:0 .5%;
         // background: #ADA8B6;
         // padding: 5px;
+
+        &:last-of-type {
+            margin-right:100px;
+        }
         img {
             height: 100%;
             position: relative;
@@ -150,19 +168,21 @@
             left:0;
             width:0;
             font-size:10pt;
-            height:30px;
+            height:100%;
             border-top: 2px solid black;
             z-index:1;
             transition: ease left .5s;
             overflow: hidden;
+            text-align: right;
+            background: rgba(255,255,255,.8)
 
         }
         &.active {
             z-index:10;
 
             .height {
-                left:-60px;
-                width: 60px;
+                left:100%;
+                width: 150px;
             }
             img {
                 z-index:9;

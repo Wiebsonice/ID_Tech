@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Home from '@/components/home'
 import TheData from '@/components/TheData'
 import Scale from '@/components/Scale'
+import TheBuddha from '@/components/TheBuddha'
 
 Vue.use(Router)
 
@@ -10,8 +11,8 @@ export default new Router({
     routes: [
         {
             path:'/',
-            name: 'Hello',
-            component: HelloWorld
+            name: 'Home',
+            component: Home
         },
         {
             path:'/the-data',
@@ -22,6 +23,11 @@ export default new Router({
             path:'/scale',
             name: 'Scale',
             component: Scale
+        },
+        {
+            path:'/boeddha',
+            name: 'Buddha',
+            component: TheBuddha
         }
     ]
 })

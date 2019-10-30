@@ -6,6 +6,7 @@
             <ul>
                 <li><router-link to="/">Home</router-link></li>
                 <li><router-link to="the-data">The data</router-link></li>
+                <li><router-link to="boeddha">Wat betekent een Boeddha?</router-link></li>
                 <li><router-link to="scale">Interactive scale</router-link></li>
             </ul>
         </nav>
