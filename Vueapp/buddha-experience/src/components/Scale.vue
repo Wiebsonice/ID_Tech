@@ -7,11 +7,11 @@
       <p>
           <div class="outer-scale">
               <ul class="data-block">
-              <li v-for="item in apiDataSorted" v-bind:style="{ 'height': 'calc(' + item.extent.value + '/ 73 * 636px)' }">
+              <li v-for="item in apiDataSorted" v-bind:style="{ 'height': 'calc(' + item.extent.value + '/ 73 * 636px)' }" v-on:click="selected = item.cho.value" v-bind:class="{active:item.cho.value == selected}">
                 <!-- <a v-bind:href="''+item.cho.value+''">{{ item.cho.value }}</a> -->
                 <!-- <h2> {{ item.title.value }} </h2> -->
                 <img :src="''+item.img.value+''" alt="">
-                <!-- <p> Height: {{ item.extent.value }} cm</p> -->
+                <p class="height">{{ item.extent.value }} cm</p>
               </li>
             </ul>
           </div>
@@ -24,7 +24,8 @@
         data: function() {
             return {
                 apiData: [],
-                apiDataSorted: []
+                apiDataSorted: [],
+                selected: undefined
             }
         },
         mounted: function() {
@@ -86,12 +87,19 @@
                 });
 
                 // Assign de api data aan apiData
-                // console.log("Fetched :" + fetchedData)
+
                 // console.log("sorted :" + sortedData)
 
                 self.apiDataSorted = sortedData;
                 self.apiData = fetchedData;
+                // console.log(self.apiDataSorted)
                 })
+            }
+        },
+        methods: {
+            greet: function () {
+              // `this` inside methods points to the Vue instance
+                  // event.target.parentElement.classList.toggle('active')
             }
         }
     }
@@ -103,25 +111,67 @@
     width:100vw;
     overflow-x: scroll;
     overflow-y: hidden;
-    height: calc(100vh - 280px)
+    height: calc(100vh - 280px);
+    background: url(../assets/scale.png);
+    background-size: auto 2000px;
+    background-position: bottom;
 }
 
 .data-block {
     width:3000px;
     text-align: left;
+    margin-top:0;
+    margin-bottom: 0 !important;
     display: flex;
     align-items: flex-end;
 
     li {
         list-style-type:none;
         display: inline-block;
+        position:relative;
         width:auto;
         margin:0 .5%;
         // background: #ADA8B6;
         // padding: 5px;
         img {
             height: 100%;
+            position: relative;
+            z-index:5;
+            transition: ease box-shadow .5s;
+            -webkit-box-shadow: 0px 3px 4px 0px rgba(0,0,0,0);
+            -moz-box-shadow: 0px 3px 4px 0px rgba(0,0,0,0);
+            box-shadow: 0px 3px 4px 0px rgba(0,0,0,0);
         }
+        .height {
+            position: absolute;
+            top:2px;
+            box-sizing: border-box;
+            margin:0 !important;
+            left:0;
+            width:0;
+            font-size:10pt;
+            height:30px;
+            border-top: 2px solid black;
+            z-index:1;
+            transition: ease left .5s;
+            overflow: hidden;
+
+        }
+        &.active {
+            z-index:10;
+
+            .height {
+                left:-60px;
+                width: 60px;
+            }
+            img {
+                z-index:9;
+                -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+                box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+            }
+        }
+
     }
 }
 
