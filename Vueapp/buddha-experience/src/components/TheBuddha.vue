@@ -100,6 +100,17 @@ import infoblob from "./infoblob.vue"
                 self.apiData = fetchedData
                 })
             }
+        },
+        methods: {
+            viewHandler: function(e) {
+                console.log(e.type) // 'enter', 'exit', 'progress'
+                console.log(e.percentInView) // 0..1 how much element overlap the viewport
+                console.log(e.percentTop) // 0..1 position of element at viewport 0 - above , 1 - below
+                console.log(e.percentCenter) // 0..1 position the center of element at viewport 0 - center at viewport top, 1 - center at viewport bottom
+                console.log(e.scrollPercent) // 0..1 current scroll position of page
+                console.log(e.scrollValue) // 0..1 last scroll value (change of page scroll offset)
+                console.log(e.target.rect) // element.getBoundingClientRect() result
+            }
         }
     }
 </script>

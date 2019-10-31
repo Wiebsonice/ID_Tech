@@ -1,5 +1,4 @@
 <template>
-  <div class="hello">
       <div class="outer-blob">
           <div class="content-blob">
               <h2> {{ title }}</h2>
@@ -7,7 +6,6 @@
               <h3>Lees het verhaal!</h3>
           </div>
       </div>
-  </div>
 </template>
 
 <script>
