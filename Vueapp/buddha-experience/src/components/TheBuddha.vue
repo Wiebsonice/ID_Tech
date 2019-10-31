@@ -28,17 +28,17 @@ import infoblob from "./infoblob.vue"
                     {
                       id: 1,
                       title: 'De tradidionele chineese boeddha',
-                      text: 'Praesent turpis nibh, bibendum at ultrices et, placerat sit amet dui. Nullam tempus, mi eget feugiat ultricies, augue elit dignissim sapien, sit amet faucibus leo dui a dui. Vivamus eget diam porta, commodo nulla sit amet, molestie magna. Suspendisse consectetur imperdiet suscipit. Proin eu erat dui. Aliquam est ante, aliquam id faucibus sed, ullamcorper faucibus lectus. Ut condimentum est vitae lorem elementum tincidunt. Aenean porttitor ullamcorper luctus.'
+                      text: 'De dikbuik Boeddha komt van oorsprong uit China en wordt in het chinees ook wel Pu-Tai genoemd (in het Japans Hotei). Volgens de legende was Pu-Tai-Ho-Shang een Chinese zenmeester (monnik) die zeer gelukkig en zonder zorgen door China rondtrok om het Boeddhisme te verspreiden. Hij was hierbij vaak omringd door kinderen en werd geëerd om zijn enorme blijdschap en gulheid, wat hem ook zijn bijnaam Happy Boeddha opleverde. Na zijn dood werd hij vereerd als volksheld, vruchtbaarheidsgod en brenger van geluk.'
                     },
                     {
                       id: 2,
                       title: 'De Sakyamuni',
-                      text: 'Curabitur sit amet pellentesque eros. Cras sit amet ultrices lacus, ut dignissim purus. Maecenas sollicitudin quam sed nisl interdum tincidunt. Nam ut nibh non ligula tincidunt luctus venenatis a nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer at molestie metus. Nullam id quam libero. Praesent consectetur enim eget leo molestie ullamcorper.'
+                      text: 'De dunne Boeddha komt van oorsprong uit India en wordt ook wel Gautama, Sakyamuni of historische Boeddha genoemd. Volgens de aloude legende was Siddhartha Gautama een rijke prins die alles had wat zijn hartje begeerde. Later kwam hij in aanraking met het leed van de wereld en besloot dat dit anders moest. Hij ruilde zijn leven vol welvaart in voor een minimalistisch bestaan. Mediterend onder een bodhiboom begon hij na te denken over de oorzaak van het lijden in de wereld. Na een tijd zag hij in wat de oorzaak was en vanaf dat moment bereikte Gautama zijn verlichting. Gautama werd de Boeddha en hiermee de stichter van het Boeddhisme.'
                     },
                     {
                       id: 3,
                       title: 'Dharmachakra mudra',
-                      text: 'Vestibulum consectetur aliquet dui ut feugiat. In vehicula velit tellus, hendrerit vestibulum neque sagittis sed. Aliquam pulvinar sagittis mattis. Integer non mi et lectus semper luctus iaculis at leo. Sed suscipit justo ac tellus fermentum posuere. Cras fermentum ultricies metus, sed lobortis ex ullamcorper at. Mauris eget imperdiet magna. Donec vulputate et metus non convallis. Fusce quis leo quis nibh interdum condimentum non ac nulla. Sed aliquet, ligula et varius varius, quam mauris vestibulum erat, a volutpat eros eros vitae nisl. Aenean placerat aliquet luctus. Donec sagittis ante et ligula pellentesque, id auctor risus scelerisque. Aliquam lobortis lacus in eros imperdiet tempor. Sed aliquet aliquam urna sit amet egestas. Nam odio est, porttitor sit amet diam et, bibendum gravida risus.'
+                      text: 'De Dharmachakra mudra wordt ook wel het gebaar van de prediker genoemd. Hierbij zitten de handen op de hoogte van de borst en zijn de wijsvingers en duimtoppen van iedere hand tegen elkaar gedrukt. De vingers aan beide handen vormen nu een kleine cirkel. Vervolgens raakt de middelvinger van de linkerhand de plaats waar de duim en wijsvinger van de rechterhand elkaar raken. Deze houding symboliseert het moment waarop Boeddha zijn rede(s) hielt en zijn leer uiteenzette. De leer van Boeddha word ook wel het rad van de leer genoemd. Het rad van de leer, of ookwel Darmawiel, heeft acht spaken die staan voor het achtvoudige pad naar verlichting in het Boeddhisme. Eenieder die deze leer wil leren moet zelf op pad gaan en de waarheid ontdekken. De kern van de leer is dit achtvoudige pad en de vier edele waarheden. Deze houding verwijst dus naar het moment dat het Boeddhisme is begonnen. Deze houding zie je bij Gautama Boeddha op het moment van de eerste prediking (Sakyamuni) en bij de hemelse Boeddha (Vairochana) van het Centrum van het heelal.'
                     }
                 ]
             }
@@ -99,17 +99,6 @@ import infoblob from "./infoblob.vue"
                 // Assign de api data aan apiData
                 self.apiData = fetchedData
                 })
-            }
-        },
-        methods: {
-            viewHandler: function(e) {
-                console.log(e.type) // 'enter', 'exit', 'progress'
-                console.log(e.percentInView) // 0..1 how much element overlap the viewport
-                console.log(e.percentTop) // 0..1 position of element at viewport 0 - above , 1 - below
-                console.log(e.percentCenter) // 0..1 position the center of element at viewport 0 - center at viewport top, 1 - center at viewport bottom
-                console.log(e.scrollPercent) // 0..1 current scroll position of page
-                console.log(e.scrollValue) // 0..1 last scroll value (change of page scroll offset)
-                console.log(e.target.rect) // element.getBoundingClientRect() result
             }
         }
     }

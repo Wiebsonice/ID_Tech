@@ -1,6 +1,9 @@
 <template>
       <div class="outer-blob">
-          <div class="content-blob">
+          <div class="content-blob" v-observe-visibility="{
+              callback: visibilityChanged,
+              throttle: 300,
+          }" ref="scale">
               <h2> {{ title }}</h2>
               <p>{{ text }}</p>
               <h3>Lees het verhaal!</h3>
@@ -16,6 +19,17 @@ export default {
       return {
           // title: String,
           // nmbr: Number
+      }
+  },
+  methods: {
+      visibilityChanged (isVisible, entry) {
+          this.isVisible = isVisible
+          // console.log(isVisible)
+          if (isVisible == true) {
+               this.$refs.scale.classList.add("in-view")
+          } else {
+              this.$refs.scale.classList.remove("in-view")
+          }
       }
   }
 }
@@ -38,6 +52,17 @@ export default {
             left: 50%;
             top: 48%;
             transform:translate(-50%, -50%);
+            opacity: 0;
+            transition: ease opacity .5s;
+            transition-delay: 2;
+
+            &.in-view {
+                opacity:1;
+            }
+            p {
+                max-height: 400px;
+                overflow-y: scroll;
+            }
         }
     }
 </style>
