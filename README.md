@@ -12,7 +12,7 @@ Het concept is gemaakt voor jonge kinderen. Toen ik door het tropen museum liep 
   
 Er zijn veel dingen aan een boeddha die een speciale betekenis hebben, maar voor kinderen is dit alleen relevant als het simpel en kort word uitgelegd. Daarom laat ik de kinderen zichzelf vergelijken met de boeddha's. Dit doe ik met de lengte, het idee is dat mensen op de website met hun eigen lengte zichzelf kunnen vergelijken met de boeddha's. En in musea dit kunnen doen met hun eigen lengte. Daarmee trek je de aandacht van het kind, en kun je langzaam weetjes geven over wat een boeddha betekent, en wat zijn karaterestieken betekenen.  
 
-De uitgebreide uitleg is te vinden op deze pagina [Buddha experience](https://github.com/Wiebsonice/frontend-applications/wiki/Buddha-Experience-concept)
+De uitgebreide uitleg is te vinden op deze pagina [Buddha experience](https://github.com/Wiebsonice/frontend-applications/wiki/De-Boeddha-experience)
 
 
 ## Getting Started
@@ -131,6 +131,7 @@ Een aantal waarden die ik binnen krijg heb ik clientside opgelost. Zo heb ik de 
 
 * Scss implementatie met hulp van [Coenmathijssen](https://github.com/Coenmathijssen/) 
 * Clientside datamanipulatie `http` to `https` fix met hulp van [Razpudding](https://github.com/razpudding)
+* Dynamic components begin hulp van [Wessel](#)
 
 ## License
 
