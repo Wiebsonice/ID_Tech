@@ -4,10 +4,7 @@
         <img alt="Vue logo" class="logo" src="./assets/logo.png">
         <nav class="main-nav">
             <ul>
-                <li><router-link to="/">Home</router-link></li>
-                <li><router-link to="the-data">The data</router-link></li>
-                <li><router-link to="boeddha">Wat betekent een Boeddha?</router-link></li>
-                <li><router-link to="scale">Interactive scale</router-link></li>
+                <li v-for="i in links"><router-link v-bind:to="i.link">{{ i.title }}</router-link></li>
             </ul>
         </nav>
     </div>
@@ -18,7 +15,33 @@
 <script>
 
 export default {
-  name: 'app'
+  name: 'app',
+  data: function() {
+      return {
+          links: [
+            {
+                id: 1,
+                title: 'Home',
+                link: '/'
+            },
+            {
+                id: 2,
+                title: 'The data',
+                link: 'the-data'
+            },
+            {
+                id: 3,
+                title: 'Welke boeddhas zijn er?',
+                link: 'boeddha'
+            },
+            {
+                id: 4,
+                title: 'Interactieve scale',
+                link: 'scale'
+            }
+          ]
+      }
+  }
 }
 </script>
 

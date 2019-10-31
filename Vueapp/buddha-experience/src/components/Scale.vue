@@ -121,7 +121,7 @@
     background: url(../assets/scale.png);
     background-size: auto 2000px;
     background-position: bottom;
-    opacity:0;
+    opacity:1;
     transition: ease opacity .5s;
 
     &.show-scale {
