@@ -82,11 +82,16 @@ Soon meer uitleg
 * [Data uit API](https://github.com/Wiebsonice/frontend-applications/wiki/Documentatie-%7C-Data-ophalen-en-gebruiken)
 * [Data manipulatie](https://github.com/Wiebsonice/frontend-applications/wiki/Documentatie-%7C-Data-bewerken-clientside)
 * [SparQl Query](https://github.com/Wiebsonice/frontend-applications/wiki/Documentatie-%7C-SparQl-Query)
+* [Active scale](https://github.com/Wiebsonice/frontend-applications/wiki/Documentatie-%7C-Active-scale)
+* [Dynamic components](https://github.com/Wiebsonice/frontend-applications/wiki/Documentatie-%7C-Dynamic-Components)
+* [Typed.js](https://github.com/Wiebsonice/frontend-applications/wiki/Documentatie-%7C-Typed.js)
+* [Visability checker](https://github.com/Wiebsonice/frontend-applications/wiki/Documentatie-%7C-Visability-Checker)
+* [Focus element on scale](#)
 
   
 ## API Data
 
-De Data die ik gebruik in de app komt van het endpoint van de NMVW collectie. Hoe ik deze data binnenhaal is te lezen op de pagina [](), dit is met SparQl gedaan. De data die ik terug krijg als object ziet er alsvolgd uit:
+De Data die ik gebruik in de app komt van het endpoint van de NMVW collectie. Hoe ik deze data binnenhaal is te lezen op de pagina [Data uit API](https://github.com/Wiebsonice/frontend-applications/wiki/Documentatie-%7C-Data-ophalen-en-gebruiken), dit is met SparQl gedaan. De data die ik terug krijg als object ziet er alsvolgd uit:
 
 ```
 0: {
@@ -132,6 +137,7 @@ Een aantal waarden die ik binnen krijg heb ik clientside opgelost. Zo heb ik de 
 * Scss implementatie met hulp van [Coenmathijssen](https://github.com/Coenmathijssen/) 
 * Clientside datamanipulatie `http` to `https` fix met hulp van [Razpudding](https://github.com/razpudding)
 * Dynamic components begin hulp van [Wessel](#)
+* Deployment help door [Joan Padolina](https://github.com/joanpadolina/)
 
 ## License
 
